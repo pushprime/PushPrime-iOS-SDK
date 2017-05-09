@@ -1,0 +1,922 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		02D521B35DD187F56BC98BE70F1FA01D /* Pods-PushPrime_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A9A719FD0EA13D90B78AD6BEB547D10D /* Pods-PushPrime_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0568E619A2B62B000892ACF83D1F6E20 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B55BCBE3DC13E2B06B41164A85D5B9B3 /* Foundation.framework */; };
+		11BFF892EC3D011112585430DAA1B0A7 /* PushPrime-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C37EC04ECB37EED3F6886CADA93B76F7 /* PushPrime-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1A7D4256795837F0471ADA04FB30C697 /* Pods-PushPrime_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 35AFE91D9ABADC467FCBC9AEC487F6BC /* Pods-PushPrime_Example-dummy.m */; };
+		1F18E250CE49F5CA45FCE3A17C210226 /* PushPrimeAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = F80005218F313D276074798F147EDB1B /* PushPrimeAPIClient.m */; };
+		301D4013844D90A7F1ED6F2B28D10833 /* PushPrimeStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 7509F0C786DB032BA7FDF263F8B6AA2F /* PushPrimeStorage.m */; };
+		5BCD2B10192463E116D1C53ED7C17EB1 /* PushPrimePermissionHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = B0A7012BE3F076C406C6F0BBC9048D18 /* PushPrimePermissionHandler.m */; };
+		613ADC8BF9954CEA61BA7523B54C3439 /* Pods-PushPrimeNotificationService-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E02EDFF21516577B12D7EF4322ADFA3 /* Pods-PushPrimeNotificationService-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		68DC9E70F478BE60D706FD00B5B27F30 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B55BCBE3DC13E2B06B41164A85D5B9B3 /* Foundation.framework */; };
+		6C84B315B8C32F0F2CB05A2D49D0BECF /* Pods-PushPrime_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E881B8BF88EE86093FF28CE6C13BF2CA /* Pods-PushPrime_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7B23B5BA57468B15BB594F6F433D1AE5 /* PushPrimeAPIClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A8C3255A33415F27B140F62A421AD7F /* PushPrimeAPIClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		850E6EB8A73E71F281200311FF5480C0 /* PushPrimePermissionHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = A438298AD9163023C5DD577F9F41A8F5 /* PushPrimePermissionHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9952D418CBC016CB8658AAC8EBC7E297 /* PushPrimeNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FBCE9AE1172A8FDBE79ACC013B005FE /* PushPrimeNotification.m */; };
+		9E9F03548DDAB24D00CFFD048702BDE1 /* PushPrime.m in Sources */ = {isa = PBXBuildFile; fileRef = 276759CAC289E5AA45B2C399EF45A33A /* PushPrime.m */; };
+		A12B60409C3B847C8827D33DEDA4D549 /* Pods-PushPrimeNotificationService-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EEB0A283546E8FDD242AA2400A92E5CE /* Pods-PushPrimeNotificationService-dummy.m */; };
+		A226B70C87E043802562A42B01275ABF /* PushPrime.h in Headers */ = {isa = PBXBuildFile; fileRef = 50C3A732FE34CEFC20236476CFA2B168 /* PushPrime.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B122F44D7B8DFBF6A1B4F444A57817F0 /* Pods-PushPrime_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6917F0F058E658AC7168D64C0E48F837 /* Pods-PushPrime_Tests-dummy.m */; };
+		B63235869C118BAD28ED9122CDB32DB7 /* PushPrimeLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = B76C90A4C6EA2DD99AF9EBCEDCBEAE47 /* PushPrimeLogger.m */; };
+		C01DA5C9A5EA8B523C38DFE6E47412B7 /* PushPrimeNotification.h in Headers */ = {isa = PBXBuildFile; fileRef = D43187C7031A3A9F3E182DBEA40A69EE /* PushPrimeNotification.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C68B521C4C229953F00A34141C537933 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B55BCBE3DC13E2B06B41164A85D5B9B3 /* Foundation.framework */; };
+		D003BAAF0691D38DE7B3EF19710A554D /* PushPrimeStorage.h in Headers */ = {isa = PBXBuildFile; fileRef = AA36AEFF18178EAFD33F279E84C68F64 /* PushPrimeStorage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EB1230611F038960F419911B4C8EA0DB /* PushPrime-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B7DC8EB2621F120BDDCEB269338731A /* PushPrime-dummy.m */; };
+		EF9CA1347606A1888BA7775FB82CBFD1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B55BCBE3DC13E2B06B41164A85D5B9B3 /* Foundation.framework */; };
+		F4783912B371E2E85D852BBCEDE6DC8B /* PushPrimeLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C18B236617B2B4F8DF780F27C63992A /* PushPrimeLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FD2D3AD93F779DBF02F0744173EC3C40 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A818D48F9CA6FC4481CA0EEB22AA105C /* UserNotifications.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		46EAD631DB61D322F31251E5FCDE06BE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C46E732169CEF7DF98FE8AD675B6AD03;
+			remoteInfo = PushPrime;
+		};
+		F8F631CE6884D626D895DFA5743929CA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C46E732169CEF7DF98FE8AD675B6AD03;
+			remoteInfo = PushPrime;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		047C44DDDB9DB3B4B7D5E0B6C4E71607 /* Pods-PushPrime_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PushPrime_Example.release.xcconfig"; sourceTree = "<group>"; };
+		0972E747997883F4CCDD1900A314B384 /* Pods_PushPrime_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_PushPrime_Example.framework; path = "Pods-PushPrime_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1923582B02AAEE83C61712A8E8B10691 /* Pods-PushPrime_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PushPrime_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		276759CAC289E5AA45B2C399EF45A33A /* PushPrime.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PushPrime.m; sourceTree = "<group>"; };
+		27CBC325450A7A23C14D595B144958FA /* PushPrime.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = PushPrime.modulemap; sourceTree = "<group>"; };
+		2B7DC8EB2621F120BDDCEB269338731A /* PushPrime-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PushPrime-dummy.m"; sourceTree = "<group>"; };
+		35AFE91D9ABADC467FCBC9AEC487F6BC /* Pods-PushPrime_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PushPrime_Example-dummy.m"; sourceTree = "<group>"; };
+		35DE318B88FF806E2E56339E0F085972 /* Pods_PushPrimeNotificationService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_PushPrimeNotificationService.framework; path = "Pods-PushPrimeNotificationService.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3EA8A8BA92A97A273BFA7B2BE31B01EE /* Pods-PushPrimeNotificationService.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PushPrimeNotificationService.debug.xcconfig"; sourceTree = "<group>"; };
+		42B3EF248F5681F63282AE8373B9AA39 /* Pods-PushPrime_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-PushPrime_Tests.modulemap"; sourceTree = "<group>"; };
+		437C3E78A67D379795F11D2897E4E3FE /* Pods-PushPrime_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PushPrime_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		4696A03E437A6B4BF2D1B468A9D2ACE3 /* Pods_PushPrime_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_PushPrime_Tests.framework; path = "Pods-PushPrime_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		47BB4513999430CB78E276C934268A12 /* Pods-PushPrimeNotificationService.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PushPrimeNotificationService.release.xcconfig"; sourceTree = "<group>"; };
+		4E02EDFF21516577B12D7EF4322ADFA3 /* Pods-PushPrimeNotificationService-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PushPrimeNotificationService-umbrella.h"; sourceTree = "<group>"; };
+		4FBCE9AE1172A8FDBE79ACC013B005FE /* PushPrimeNotification.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PushPrimeNotification.m; sourceTree = "<group>"; };
+		50C3A732FE34CEFC20236476CFA2B168 /* PushPrime.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PushPrime.h; sourceTree = "<group>"; };
+		54771C2F8321BEC5077C3AFE6439685F /* Pods-PushPrime_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PushPrime_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		5C18B236617B2B4F8DF780F27C63992A /* PushPrimeLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PushPrimeLogger.h; sourceTree = "<group>"; };
+		5CADCE6CC6998FDBB8903CB8010DC688 /* Pods-PushPrime_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PushPrime_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		607AFF4721DC383BA89375FF13864415 /* Pods-PushPrime_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-PushPrime_Example.modulemap"; sourceTree = "<group>"; };
+		68364AD0C647C1EFC7A2DED65449075A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6917F0F058E658AC7168D64C0E48F837 /* Pods-PushPrime_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PushPrime_Tests-dummy.m"; sourceTree = "<group>"; };
+		6CEB5E42E7A78C1BDD84549CE4D98F3C /* PushPrime-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PushPrime-prefix.pch"; sourceTree = "<group>"; };
+		6EC6C09BF80BF28CC4058289B5B925F8 /* PushPrime.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PushPrime.xcconfig; sourceTree = "<group>"; };
+		7459F703ED476F10B27F9F31C4D38998 /* Pods-PushPrimeNotificationService.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-PushPrimeNotificationService.modulemap"; sourceTree = "<group>"; };
+		7509F0C786DB032BA7FDF263F8B6AA2F /* PushPrimeStorage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PushPrimeStorage.m; sourceTree = "<group>"; };
+		791B7D1CC2E3F607D88BEBEAD529E347 /* Pods-PushPrime_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PushPrime_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		7A535D8372D5541B9FC536E2E61C9A37 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7EE5FE36793D705482351F43959684F6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		927F520CA3A0E6BB88611FE6D51B99F8 /* PushPrime.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PushPrime.framework; path = PushPrime.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		946FE2084D63BBF4486BDD72E613A55D /* Pods-PushPrime_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PushPrime_Example-frameworks.sh"; sourceTree = "<group>"; };
+		951A653234513E966522E3B11B80FB24 /* Pods-PushPrimeNotificationService-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PushPrimeNotificationService-resources.sh"; sourceTree = "<group>"; };
+		968565E3DC89645AB6C35F37174B27B2 /* Pods-PushPrime_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PushPrime_Example-resources.sh"; sourceTree = "<group>"; };
+		9A8C3255A33415F27B140F62A421AD7F /* PushPrimeAPIClient.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PushPrimeAPIClient.h; sourceTree = "<group>"; };
+		9B38621F6AF227F36491BC65B9A608DA /* Pods-PushPrime_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PushPrime_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		9E17FEDF6DCDF745F8BE43AF73088C55 /* Pods-PushPrime_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PushPrime_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		A438298AD9163023C5DD577F9F41A8F5 /* PushPrimePermissionHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PushPrimePermissionHandler.h; sourceTree = "<group>"; };
+		A818D48F9CA6FC4481CA0EEB22AA105C /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/UserNotifications.framework; sourceTree = DEVELOPER_DIR; };
+		A9A719FD0EA13D90B78AD6BEB547D10D /* Pods-PushPrime_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PushPrime_Example-umbrella.h"; sourceTree = "<group>"; };
+		AA36AEFF18178EAFD33F279E84C68F64 /* PushPrimeStorage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PushPrimeStorage.h; sourceTree = "<group>"; };
+		AEFAB9B22FFDE1389ECDD63241C833D3 /* Pods-PushPrime_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PushPrime_Tests-resources.sh"; sourceTree = "<group>"; };
+		B0A7012BE3F076C406C6F0BBC9048D18 /* PushPrimePermissionHandler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PushPrimePermissionHandler.m; sourceTree = "<group>"; };
+		B55BCBE3DC13E2B06B41164A85D5B9B3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		B76C90A4C6EA2DD99AF9EBCEDCBEAE47 /* PushPrimeLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PushPrimeLogger.m; sourceTree = "<group>"; };
+		BA7A1FB90B58700DA6DE2D32284E4189 /* Pods-PushPrimeNotificationService-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PushPrimeNotificationService-acknowledgements.markdown"; sourceTree = "<group>"; };
+		BC9A4F59D97F108BC3312F3A5850D64F /* Pods-PushPrimeNotificationService-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PushPrimeNotificationService-acknowledgements.plist"; sourceTree = "<group>"; };
+		C37EC04ECB37EED3F6886CADA93B76F7 /* PushPrime-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PushPrime-umbrella.h"; sourceTree = "<group>"; };
+		D43187C7031A3A9F3E182DBEA40A69EE /* PushPrimeNotification.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PushPrimeNotification.h; sourceTree = "<group>"; };
+		D51C62DA41B252B0C78BA509F63E6808 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E7BB97E3FB1F3A2DC6F109C082E97CE4 /* Pods-PushPrime_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PushPrime_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		E881B8BF88EE86093FF28CE6C13BF2CA /* Pods-PushPrime_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PushPrime_Tests-umbrella.h"; sourceTree = "<group>"; };
+		EEB0A283546E8FDD242AA2400A92E5CE /* Pods-PushPrimeNotificationService-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PushPrimeNotificationService-dummy.m"; sourceTree = "<group>"; };
+		F80005218F313D276074798F147EDB1B /* PushPrimeAPIClient.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PushPrimeAPIClient.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		156505D610B193FA4F5A26DE72DE50B8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF9CA1347606A1888BA7775FB82CBFD1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD9514DC3FDA8DA02694807477D428D7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68DC9E70F478BE60D706FD00B5B27F30 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC2011F3617C38DD114146B05137BC55 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C68B521C4C229953F00A34141C537933 /* Foundation.framework in Frameworks */,
+				FD2D3AD93F779DBF02F0744173EC3C40 /* UserNotifications.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC21AC5C0424CD24DB51263B21A05A17 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0568E619A2B62B000892ACF83D1F6E20 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		001CEBA0A4A9BFE0D1D70DF241410AF0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0972E747997883F4CCDD1900A314B384 /* Pods_PushPrime_Example.framework */,
+				4696A03E437A6B4BF2D1B468A9D2ACE3 /* Pods_PushPrime_Tests.framework */,
+				35DE318B88FF806E2E56339E0F085972 /* Pods_PushPrimeNotificationService.framework */,
+				927F520CA3A0E6BB88611FE6D51B99F8 /* PushPrime.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		116447B70A49E85B14F00367DC46F00F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7A535D8372D5541B9FC536E2E61C9A37 /* Info.plist */,
+				27CBC325450A7A23C14D595B144958FA /* PushPrime.modulemap */,
+				6EC6C09BF80BF28CC4058289B5B925F8 /* PushPrime.xcconfig */,
+				2B7DC8EB2621F120BDDCEB269338731A /* PushPrime-dummy.m */,
+				6CEB5E42E7A78C1BDD84549CE4D98F3C /* PushPrime-prefix.pch */,
+				C37EC04ECB37EED3F6886CADA93B76F7 /* PushPrime-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/PushPrime";
+			sourceTree = "<group>";
+		};
+		3844792D2E3CF7E1708701008803ABFD /* Pods-PushPrimeNotificationService */ = {
+			isa = PBXGroup;
+			children = (
+				D51C62DA41B252B0C78BA509F63E6808 /* Info.plist */,
+				7459F703ED476F10B27F9F31C4D38998 /* Pods-PushPrimeNotificationService.modulemap */,
+				BA7A1FB90B58700DA6DE2D32284E4189 /* Pods-PushPrimeNotificationService-acknowledgements.markdown */,
+				BC9A4F59D97F108BC3312F3A5850D64F /* Pods-PushPrimeNotificationService-acknowledgements.plist */,
+				EEB0A283546E8FDD242AA2400A92E5CE /* Pods-PushPrimeNotificationService-dummy.m */,
+				951A653234513E966522E3B11B80FB24 /* Pods-PushPrimeNotificationService-resources.sh */,
+				4E02EDFF21516577B12D7EF4322ADFA3 /* Pods-PushPrimeNotificationService-umbrella.h */,
+				3EA8A8BA92A97A273BFA7B2BE31B01EE /* Pods-PushPrimeNotificationService.debug.xcconfig */,
+				47BB4513999430CB78E276C934268A12 /* Pods-PushPrimeNotificationService.release.xcconfig */,
+			);
+			name = "Pods-PushPrimeNotificationService";
+			path = "Target Support Files/Pods-PushPrimeNotificationService";
+			sourceTree = "<group>";
+		};
+		3F173B48BD2AFB4D5A5B6078F4BCEC16 /* Pods-PushPrime_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				7EE5FE36793D705482351F43959684F6 /* Info.plist */,
+				42B3EF248F5681F63282AE8373B9AA39 /* Pods-PushPrime_Tests.modulemap */,
+				791B7D1CC2E3F607D88BEBEAD529E347 /* Pods-PushPrime_Tests-acknowledgements.markdown */,
+				9B38621F6AF227F36491BC65B9A608DA /* Pods-PushPrime_Tests-acknowledgements.plist */,
+				6917F0F058E658AC7168D64C0E48F837 /* Pods-PushPrime_Tests-dummy.m */,
+				1923582B02AAEE83C61712A8E8B10691 /* Pods-PushPrime_Tests-frameworks.sh */,
+				AEFAB9B22FFDE1389ECDD63241C833D3 /* Pods-PushPrime_Tests-resources.sh */,
+				E881B8BF88EE86093FF28CE6C13BF2CA /* Pods-PushPrime_Tests-umbrella.h */,
+				9E17FEDF6DCDF745F8BE43AF73088C55 /* Pods-PushPrime_Tests.debug.xcconfig */,
+				E7BB97E3FB1F3A2DC6F109C082E97CE4 /* Pods-PushPrime_Tests.release.xcconfig */,
+			);
+			name = "Pods-PushPrime_Tests";
+			path = "Target Support Files/Pods-PushPrime_Tests";
+			sourceTree = "<group>";
+		};
+		4056D8E6C0BC0BC8BE3E8AE94ECFEE5E /* Pods-PushPrime_Example */ = {
+			isa = PBXGroup;
+			children = (
+				68364AD0C647C1EFC7A2DED65449075A /* Info.plist */,
+				607AFF4721DC383BA89375FF13864415 /* Pods-PushPrime_Example.modulemap */,
+				437C3E78A67D379795F11D2897E4E3FE /* Pods-PushPrime_Example-acknowledgements.markdown */,
+				54771C2F8321BEC5077C3AFE6439685F /* Pods-PushPrime_Example-acknowledgements.plist */,
+				35AFE91D9ABADC467FCBC9AEC487F6BC /* Pods-PushPrime_Example-dummy.m */,
+				946FE2084D63BBF4486BDD72E613A55D /* Pods-PushPrime_Example-frameworks.sh */,
+				968565E3DC89645AB6C35F37174B27B2 /* Pods-PushPrime_Example-resources.sh */,
+				A9A719FD0EA13D90B78AD6BEB547D10D /* Pods-PushPrime_Example-umbrella.h */,
+				5CADCE6CC6998FDBB8903CB8010DC688 /* Pods-PushPrime_Example.debug.xcconfig */,
+				047C44DDDB9DB3B4B7D5E0B6C4E71607 /* Pods-PushPrime_Example.release.xcconfig */,
+			);
+			name = "Pods-PushPrime_Example";
+			path = "Target Support Files/Pods-PushPrime_Example";
+			sourceTree = "<group>";
+		};
+		40EAE4D0E4F2EF336A3A681FFC36424E /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				50C3A732FE34CEFC20236476CFA2B168 /* PushPrime.h */,
+				276759CAC289E5AA45B2C399EF45A33A /* PushPrime.m */,
+				9A8C3255A33415F27B140F62A421AD7F /* PushPrimeAPIClient.h */,
+				F80005218F313D276074798F147EDB1B /* PushPrimeAPIClient.m */,
+				5C18B236617B2B4F8DF780F27C63992A /* PushPrimeLogger.h */,
+				B76C90A4C6EA2DD99AF9EBCEDCBEAE47 /* PushPrimeLogger.m */,
+				D43187C7031A3A9F3E182DBEA40A69EE /* PushPrimeNotification.h */,
+				4FBCE9AE1172A8FDBE79ACC013B005FE /* PushPrimeNotification.m */,
+				A438298AD9163023C5DD577F9F41A8F5 /* PushPrimePermissionHandler.h */,
+				B0A7012BE3F076C406C6F0BBC9048D18 /* PushPrimePermissionHandler.m */,
+				AA36AEFF18178EAFD33F279E84C68F64 /* PushPrimeStorage.h */,
+				7509F0C786DB032BA7FDF263F8B6AA2F /* PushPrimeStorage.m */,
+			);
+			name = Classes;
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		41D7D994D6BDE7E11709DB00839DAE5C /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B71290DD3726751D82C8995D3571A26B /* PushPrime */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7AAA0B60DCB8C59E3EDE62193B64C491 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7AAA0B60DCB8C59E3EDE62193B64C491 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				B55BCBE3DC13E2B06B41164A85D5B9B3 /* Foundation.framework */,
+				A818D48F9CA6FC4481CA0EEB22AA105C /* UserNotifications.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				41D7D994D6BDE7E11709DB00839DAE5C /* Development Pods */,
+				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
+				001CEBA0A4A9BFE0D1D70DF241410AF0 /* Products */,
+				9589EF6C13A5DDA450CE0D57CE04D6FF /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		8A6ACC2066DB11D15902F5974D7D2AC6 /* PushPrime */ = {
+			isa = PBXGroup;
+			children = (
+				40EAE4D0E4F2EF336A3A681FFC36424E /* Classes */,
+			);
+			name = PushPrime;
+			path = PushPrime;
+			sourceTree = "<group>";
+		};
+		9589EF6C13A5DDA450CE0D57CE04D6FF /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				4056D8E6C0BC0BC8BE3E8AE94ECFEE5E /* Pods-PushPrime_Example */,
+				3F173B48BD2AFB4D5A5B6078F4BCEC16 /* Pods-PushPrime_Tests */,
+				3844792D2E3CF7E1708701008803ABFD /* Pods-PushPrimeNotificationService */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		B71290DD3726751D82C8995D3571A26B /* PushPrime */ = {
+			isa = PBXGroup;
+			children = (
+				8A6ACC2066DB11D15902F5974D7D2AC6 /* PushPrime */,
+				116447B70A49E85B14F00367DC46F00F /* Support Files */,
+			);
+			name = PushPrime;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		46B646C9E16A277CD4AA39AA28B017E0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				613ADC8BF9954CEA61BA7523B54C3439 /* Pods-PushPrimeNotificationService-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5417573FEDEDB807BD327C2DF70DC068 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11BFF892EC3D011112585430DAA1B0A7 /* PushPrime-umbrella.h in Headers */,
+				A226B70C87E043802562A42B01275ABF /* PushPrime.h in Headers */,
+				7B23B5BA57468B15BB594F6F433D1AE5 /* PushPrimeAPIClient.h in Headers */,
+				F4783912B371E2E85D852BBCEDE6DC8B /* PushPrimeLogger.h in Headers */,
+				C01DA5C9A5EA8B523C38DFE6E47412B7 /* PushPrimeNotification.h in Headers */,
+				850E6EB8A73E71F281200311FF5480C0 /* PushPrimePermissionHandler.h in Headers */,
+				D003BAAF0691D38DE7B3EF19710A554D /* PushPrimeStorage.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5996DA5D490891848D215F89424BCD88 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C84B315B8C32F0F2CB05A2D49D0BECF /* Pods-PushPrime_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAB0CF6D2C08F5F3E39E1F8349A9AE17 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02D521B35DD187F56BC98BE70F1FA01D /* Pods-PushPrime_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		8F37F58F14B4747A44827256222C7476 /* Pods-PushPrime_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0DAC3E7A2BBA75F0F089148053543944 /* Build configuration list for PBXNativeTarget "Pods-PushPrime_Example" */;
+			buildPhases = (
+				1E0064194659CFEC1928605A1719D4A1 /* Sources */,
+				BD9514DC3FDA8DA02694807477D428D7 /* Frameworks */,
+				DAB0CF6D2C08F5F3E39E1F8349A9AE17 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				22309CD42AE8F2BF4AB2FF70BE99FD4A /* PBXTargetDependency */,
+			);
+			name = "Pods-PushPrime_Example";
+			productName = "Pods-PushPrime_Example";
+			productReference = 0972E747997883F4CCDD1900A314B384 /* Pods_PushPrime_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		96C15AC2284C2906CB28761A5E1B746C /* Pods-PushPrimeNotificationService */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 99DA8190D5450483F22D6BCC27E86C2F /* Build configuration list for PBXNativeTarget "Pods-PushPrimeNotificationService" */;
+			buildPhases = (
+				0D705D484D7963D047CC22C02A81F18E /* Sources */,
+				156505D610B193FA4F5A26DE72DE50B8 /* Frameworks */,
+				46B646C9E16A277CD4AA39AA28B017E0 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				41542E937C849BC16439CFE8E829B7A8 /* PBXTargetDependency */,
+			);
+			name = "Pods-PushPrimeNotificationService";
+			productName = "Pods-PushPrimeNotificationService";
+			productReference = 35DE318B88FF806E2E56339E0F085972 /* Pods_PushPrimeNotificationService.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C46E732169CEF7DF98FE8AD675B6AD03 /* PushPrime */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1B7F71EB9D5769373EAACD40C2DC8133 /* Build configuration list for PBXNativeTarget "PushPrime" */;
+			buildPhases = (
+				7A47BE3B922AE7540F4FDFAE0C8F6809 /* Sources */,
+				DC2011F3617C38DD114146B05137BC55 /* Frameworks */,
+				5417573FEDEDB807BD327C2DF70DC068 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PushPrime;
+			productName = PushPrime;
+			productReference = 927F520CA3A0E6BB88611FE6D51B99F8 /* PushPrime.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F40269659870857F2B29B8B38D79E4DC /* Pods-PushPrime_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 41BD2903873C2A67D6878F52AEB37F91 /* Build configuration list for PBXNativeTarget "Pods-PushPrime_Tests" */;
+			buildPhases = (
+				28E3E9DB5AB5AE08BE23D69A0BC7267D /* Sources */,
+				FC21AC5C0424CD24DB51263B21A05A17 /* Frameworks */,
+				5996DA5D490891848D215F89424BCD88 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-PushPrime_Tests";
+			productName = "Pods-PushPrime_Tests";
+			productReference = 4696A03E437A6B4BF2D1B468A9D2ACE3 /* Pods_PushPrime_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 001CEBA0A4A9BFE0D1D70DF241410AF0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8F37F58F14B4747A44827256222C7476 /* Pods-PushPrime_Example */,
+				F40269659870857F2B29B8B38D79E4DC /* Pods-PushPrime_Tests */,
+				96C15AC2284C2906CB28761A5E1B746C /* Pods-PushPrimeNotificationService */,
+				C46E732169CEF7DF98FE8AD675B6AD03 /* PushPrime */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0D705D484D7963D047CC22C02A81F18E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A12B60409C3B847C8827D33DEDA4D549 /* Pods-PushPrimeNotificationService-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1E0064194659CFEC1928605A1719D4A1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A7D4256795837F0471ADA04FB30C697 /* Pods-PushPrime_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28E3E9DB5AB5AE08BE23D69A0BC7267D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B122F44D7B8DFBF6A1B4F444A57817F0 /* Pods-PushPrime_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7A47BE3B922AE7540F4FDFAE0C8F6809 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB1230611F038960F419911B4C8EA0DB /* PushPrime-dummy.m in Sources */,
+				9E9F03548DDAB24D00CFFD048702BDE1 /* PushPrime.m in Sources */,
+				1F18E250CE49F5CA45FCE3A17C210226 /* PushPrimeAPIClient.m in Sources */,
+				B63235869C118BAD28ED9122CDB32DB7 /* PushPrimeLogger.m in Sources */,
+				9952D418CBC016CB8658AAC8EBC7E297 /* PushPrimeNotification.m in Sources */,
+				5BCD2B10192463E116D1C53ED7C17EB1 /* PushPrimePermissionHandler.m in Sources */,
+				301D4013844D90A7F1ED6F2B28D10833 /* PushPrimeStorage.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		22309CD42AE8F2BF4AB2FF70BE99FD4A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PushPrime;
+			target = C46E732169CEF7DF98FE8AD675B6AD03 /* PushPrime */;
+			targetProxy = 46EAD631DB61D322F31251E5FCDE06BE /* PBXContainerItemProxy */;
+		};
+		41542E937C849BC16439CFE8E829B7A8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PushPrime;
+			target = C46E732169CEF7DF98FE8AD675B6AD03 /* PushPrime */;
+			targetProxy = F8F631CE6884D626D895DFA5743929CA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		156284431C64CB05C59BDA0595A1E95A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1B714B5A23DC41A6E87DB5325958F29D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5CADCE6CC6998FDBB8903CB8010DC688 /* Pods-PushPrime_Example.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-PushPrime_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PushPrime_Example/Pods-PushPrime_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_PushPrime_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		1D7E76987A89A428D5D89358914316AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 047C44DDDB9DB3B4B7D5E0B6C4E71607 /* Pods-PushPrime_Example.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-PushPrime_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PushPrime_Example/Pods-PushPrime_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_PushPrime_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7AEC5D53D08422465A0D6AD5A43D92CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3EA8A8BA92A97A273BFA7B2BE31B01EE /* Pods-PushPrimeNotificationService.debug.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-PushPrimeNotificationService/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PushPrimeNotificationService/Pods-PushPrimeNotificationService.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_PushPrimeNotificationService;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9E07079ED9CA235E5F5E3B925212801B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 47BB4513999430CB78E276C934268A12 /* Pods-PushPrimeNotificationService.release.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-PushPrimeNotificationService/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PushPrimeNotificationService/Pods-PushPrimeNotificationService.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_PushPrimeNotificationService;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C382132BB6BF8CA1A911872A2062FD0D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		CBD7DBA67BCF60C8758E228760F6C7CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6EC6C09BF80BF28CC4058289B5B925F8 /* PushPrime.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/PushPrime/PushPrime-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PushPrime/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/PushPrime/PushPrime.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = PushPrime;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		DABB22E93FE451850B632F470BB083EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E7BB97E3FB1F3A2DC6F109C082E97CE4 /* Pods-PushPrime_Tests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-PushPrime_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PushPrime_Tests/Pods-PushPrime_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_PushPrime_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E5ED2531A48128A0577579EDCE101E00 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6EC6C09BF80BF28CC4058289B5B925F8 /* PushPrime.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/PushPrime/PushPrime-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PushPrime/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/PushPrime/PushPrime.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = PushPrime;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		ECA22A1B496ED980BEA658D659AA7789 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E17FEDF6DCDF745F8BE43AF73088C55 /* Pods-PushPrime_Tests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-PushPrime_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PushPrime_Tests/Pods-PushPrime_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_PushPrime_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0DAC3E7A2BBA75F0F089148053543944 /* Build configuration list for PBXNativeTarget "Pods-PushPrime_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1B714B5A23DC41A6E87DB5325958F29D /* Debug */,
+				1D7E76987A89A428D5D89358914316AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1B7F71EB9D5769373EAACD40C2DC8133 /* Build configuration list for PBXNativeTarget "PushPrime" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBD7DBA67BCF60C8758E228760F6C7CA /* Debug */,
+				E5ED2531A48128A0577579EDCE101E00 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C382132BB6BF8CA1A911872A2062FD0D /* Debug */,
+				156284431C64CB05C59BDA0595A1E95A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		41BD2903873C2A67D6878F52AEB37F91 /* Build configuration list for PBXNativeTarget "Pods-PushPrime_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECA22A1B496ED980BEA658D659AA7789 /* Debug */,
+				DABB22E93FE451850B632F470BB083EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		99DA8190D5450483F22D6BCC27E86C2F /* Build configuration list for PBXNativeTarget "Pods-PushPrimeNotificationService" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7AEC5D53D08422465A0D6AD5A43D92CF /* Debug */,
+				9E07079ED9CA235E5F5E3B925212801B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

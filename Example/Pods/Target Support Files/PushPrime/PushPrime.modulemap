@@ -1,0 +1,6 @@
+framework module PushPrime {
+  umbrella header "PushPrime-umbrella.h"
+
+  export *
+  module * { export * }
+}

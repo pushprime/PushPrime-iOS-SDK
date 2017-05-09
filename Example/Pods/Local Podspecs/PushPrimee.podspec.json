@@ -1,0 +1,38 @@
+{
+  "name": "PushPrimee",
+  "version": "0.1.0",
+  "summary": "A short description of PushPrime.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/PushPrime",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Tilal": "architact_of_destruction@hotmail.com"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/PushPrime.git",
+    "tag": "0.1.0"
+  },
+  "social_media_url": "https://twitter.com/pushprime",
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "PushPrime/Classes/**/*",
+  "default_subspecs": "Core",
+  "frameworks": "UserNotifications",
+  "subspecs": [
+    {
+      "name": "Core",
+      "source_files": "PushPrimee/Classes/**/*"
+    },
+    {
+      "name": "AppExtension",
+      "source_files": "PushPrimee/Classes/**/*",
+      "pod_target_xcconfig": {
+        "GCC_PREPROCESSOR_DEFINITIONS": "MYLIBRARY_APP_EXTENSIONS=1"
+      }
+    }
+  ]
+}

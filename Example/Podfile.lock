@@ -1,0 +1,16 @@
+PODS:
+  - PushPrime (0.1.0)
+
+DEPENDENCIES:
+  - PushPrime (from `../`)
+
+EXTERNAL SOURCES:
+  PushPrime:
+    :path: ../
+
+SPEC CHECKSUMS:
+  PushPrime: b5bdfcf624e944cee927a16337bbd4dafa521683
+
+PODFILE CHECKSUM: cba1e9b554c3e65b98376f2a8c4a7af7515caac8
+
+COCOAPODS: 1.1.1

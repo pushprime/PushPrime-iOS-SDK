@@ -1,0 +1,15 @@
+use_frameworks!
+
+target 'PushPrime_Example' do
+  pod 'PushPrime', :path => '../'
+
+  target 'PushPrime_Tests' do
+    inherit! :search_paths
+
+  end
+end
+
+
+target 'PushPrimeNotificationService' do
+    pod 'PushPrime', :path => '../'
+end
