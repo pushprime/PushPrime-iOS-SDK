@@ -32,16 +32,17 @@ static PushPrime *sharedHandler = nil;
 }
 
 -(void)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions{
-    NSDictionary *openerNotification = [launchOptions objectForKey:UIApplicationLaunchOptionsRemoteNotificationKey];
-    if (openerNotification) {
-        notification = [[PushPrimeNotification alloc] initWithUserInfo:openerNotification];
-        notification.shownToUser = YES;
-        if(notificationClicked != nil) {
-            notificationClicked(notification, -1);
-            [PushPrimeLogger trackClick:notification];
+    if(launchOptions != nil){
+        NSDictionary *openerNotification = [launchOptions objectForKey:UIApplicationLaunchOptionsRemoteNotificationKey];
+        if (openerNotification) {
+            notification = [[PushPrimeNotification alloc] initWithUserInfo:openerNotification];
+            notification.shownToUser = YES;
+            if(notificationClicked != nil) {
+                notificationClicked(notification, -1);
+                [PushPrimeLogger trackClick:notification];
+            }
         }
     }
-    
     if([self isSubscribed]){
         [self bootOptIn];
     }
@@ -81,9 +82,9 @@ static PushPrime *sharedHandler = nil;
     }
     
 #if DEBUG
-    [client setParameter:@"d" withValue:@"1"];
+    [client setParameter:@"is" withValue:@"1"];
 #else
-    [client setParameter:@"d" withValue:@"0"];
+    [client setParameter:@"is" withValue:@"0"];
 #endif
     
     [client send:^(id responseObject) {
@@ -136,22 +137,22 @@ static PushPrime *sharedHandler = nil;
     }
 }
 
-- (void) setUserSegment:(NSString *)segmentId{
+- (void) setUserSegment:(NSString *)segment{
     if([self isSubscribed]){
         PushPrimeAPIClient *client = [[[PushPrimeAPIClient Builder] setMehod:@"POST"] setEndPoint:@"/setSegment"];
         [client setParameter:@"t" withValue:[self getPushPrimeId]];
         [client setParameter:@"s" withValue:segmentId];
         [client send:nil];
     } else {
-        self->segmentId = segmentId;
+        self->segmentId = segment;
     }
 }
 
-- (void) removeUserSegment:(NSString *)segmentId{
+- (void) removeUserSegment:(NSString *)segment{
     if([self isSubscribed]){
         PushPrimeAPIClient *client = [[[PushPrimeAPIClient Builder] setMehod:@"POST"] setEndPoint:@"/removeSegment"];
         [client setParameter:@"t" withValue:[self getPushPrimeId]];
-        [client setParameter:@"s" withValue:segmentId];
+        [client setParameter:@"s" withValue:segment];
         [client send:nil];
     }
 }

@@ -25,7 +25,6 @@
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		8E0779E81E9F46AC003542C3 /* PushPrimeNotificationService.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 8E8314F21E913C0D00D7F53F /* PushPrimeNotificationService.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		8E440CDB1E93F97C0020F670 /* Pods_PushPrime_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EAB93D107CC339225EEB02C /* Pods_PushPrime_Example.framework */; };
-		8E440CDE1E94CC8A0020F670 /* test.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E440CDD1E94CC8A0020F670 /* test.png */; };
 		8E8314F61E913C0D00D7F53F /* NotificationService.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E8314F51E913C0D00D7F53F /* NotificationService.m */; };
 		8EAEE6B71E8AD3CA00CA9AAA /* demonstrative.m4r.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 8EAEE6B61E8AD3CA00CA9AAA /* demonstrative.m4r.m4a */; };
 /* End PBXBuildFile section */
@@ -90,7 +89,6 @@
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		8C53BE82A415D5B124660BA5 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		8E440CDC1E94C3970020F670 /* PushPrimeNotificationService.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PushPrimeNotificationService.entitlements; sourceTree = "<group>"; };
-		8E440CDD1E94CC8A0020F670 /* test.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test.png; sourceTree = "<group>"; };
 		8E8314F21E913C0D00D7F53F /* PushPrimeNotificationService.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = PushPrimeNotificationService.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E8314F41E913C0D00D7F53F /* NotificationService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationService.h; sourceTree = "<group>"; };
 		8E8314F51E913C0D00D7F53F /* NotificationService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationService.m; sourceTree = "<group>"; };
@@ -194,7 +192,6 @@
 		6003F594195388D20070C39A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				8E440CDD1E94CC8A0020F670 /* test.png */,
 				8EAEE6B61E8AD3CA00CA9AAA /* demonstrative.m4r.m4a */,
 				6003F595195388D20070C39A /* PushPrime-Info.plist */,
 				6003F596195388D20070C39A /* InfoPlist.strings */,
@@ -387,7 +384,6 @@
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
 				8EAEE6B71E8AD3CA00CA9AAA /* demonstrative.m4r.m4a in Resources */,
-				8E440CDE1E94CC8A0020F670 /* test.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

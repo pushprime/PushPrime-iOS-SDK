@@ -32,7 +32,7 @@
  * @discussion This block is executed everytime a notification is received by the application. Please note that this block doesn't execute if a notification is not silent.
  * @param notification `PushPrimeNotification` object representing the received notification.
  */
-@property (nonatomic, copy) void (^notificationReceived) (PushPrimeNotification *notification);
+@property (nonatomic, copy) void (^ _Nullable notificationReceived) (PushPrimeNotification * _Nonnull notification);
 
 /**
  * @abstract Notification clicked block.
@@ -40,12 +40,12 @@
  * @param notification `PushPrimeNotification` object representing the clicked notification.
  * @param buttonClicked The index of the action button clicked, if user clicked on the notification itself, buttonClicked will be -1.
  */
-@property (nonatomic, copy) void (^notificationClicked) (PushPrimeNotification *notification, int buttonClicked);
+@property (nonatomic, copy) void (^ _Nullable notificationClicked) (PushPrimeNotification * _Nonnull notification, int buttonClicked);
 
 /**
  * Creates and returns global `PushPrime` object.
  */
-+ (instancetype) sharedHandler;
++ (instancetype _Nonnull ) sharedHandler;
 
 /**
  * Initialises the opt-in process. If user has not granted permission to send notificaiton, they will be prompted for the permission after this call.
@@ -57,27 +57,27 @@
  * @param application UIApplication object
  * @param launchOptions A dictionary containing launch options
  */
-- (void) application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions;
+- (void) application:(UIApplication *_Nonnull)application didFinishLaunchingWithOptions:(NSDictionary *_Nullable)launchOptions;
 
 /**
  * Should be called from the applicationDidBecomeActive method of your AppDelegate class. This method should be implemented in order to properly track users for reminder or notification based on user activity. 
  * @param application UIApplication object
  */
-- (void) applicationDidBecomeActive:(UIApplication *)application;
+- (void) applicationDidBecomeActive:(UIApplication *_Nonnull)application;
 
 /**
  * Should be called from the didRegisterForRemoteNotificationsWithDeviceToken method of your AppDelegate class. This method should be implemented in order to properly register/track push notification tokens from APNS.
  * @param application UIApplication object
  * @param deviceToken NSData object containing APNS token
  */
-- (void) application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken;
+- (void) application:(UIApplication *_Nonnull)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *_Nonnull)deviceToken;
 
 /**
  * Should be called from the didFailToRegisterForRemoteNotificationsWithError method of your AppDelegate class.
  * @param application UIApplication object
  * @param error NSError object containing the reason for registration failure
  */
-- (void) application:(UIApplication *)application didFailToRegisterForRemoteNotificationsWithError:(NSError *)error;
+- (void) application:(UIApplication *_Nonnull)application didFailToRegisterForRemoteNotificationsWithError:(NSError *_Nonnull)error;
 
 /**
  * Should be called from the didReceiveRemoteNotification method of your AppDelegate class. This method should be implemented in order to properly parse, track and handling of the incoming notifications.
@@ -87,7 +87,7 @@
  * @return A `PushPrimeNotification` object is returned which can be used to perform operation based on the notification. Please note that in case of silent notifications received while the app is not running, this is the only method which will be called and not the `notificationClicked` block.
  * @warning Please make sure to call `completionHandler()` block for silent notifications.
  */
-- (PushPrimeNotification *) application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo fetchCompletionHandler:(void (^)(UIBackgroundFetchResult))completionHandler;
+- (PushPrimeNotification *_Nonnull) application:(UIApplication *_Nonnull)application didReceiveRemoteNotification:(NSDictionary *_Nonnull)userInfo fetchCompletionHandler:(void (^_Nullable)(UIBackgroundFetchResult))completionHandler;
 
 /**
  * Should be called from the handleActionWithIdentifier method of your AppDelegate class. This method should be implemented in order to properly parse, track and handling of the action button clicks on notification buttons.
@@ -96,9 +96,9 @@
  * @param userInfo Dictionary containing the notification payload
  * @param clickedHandler Block to be executed after the notification has been parsed. Parameters for the block are same as the notification clicked block.
  */
-- (void) application:(UIApplication *)application handleActionWithIdentifier:(nullable NSString *)identifier forRemoteNotification:(NSDictionary *)userInfo completionHandler:(void(^)(PushPrimeNotification *notification, int buttonClicked))clickedHandler;
+- (void) application:(UIApplication *_Nonnull)application handleActionWithIdentifier:(nullable NSString *)identifier forRemoteNotification:(NSDictionary *_Nonnull)userInfo completionHandler:(void(^_Nullable)(PushPrimeNotification * _Nonnull notification, int buttonClicked))clickedHandler;
 
-+ (void)didReceiveNotificationWithBestAttempt:(UNMutableNotificationContent *)bestAttemptContent withContentHandler:(void (^)(UNMutableNotificationContent * _Nonnull))contentHandler;
++ (void)didReceiveNotificationWithBestAttempt:(UNMutableNotificationContent *_Nonnull)bestAttemptContent withContentHandler:(void (^_Nonnull)(UNMutableNotificationContent * _Nonnull))contentHandler;
 
 /**
  * Adds the current user to the specified segment.
